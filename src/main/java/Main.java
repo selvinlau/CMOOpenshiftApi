@@ -1,4 +1,3 @@
-package org.openshift.quickstarts.undertow.servlet;
 import static spark.Spark.*;
 
 import java.io.IOException;
@@ -29,7 +28,7 @@ public class Main {
     }
 	public static void main(String[] args) {
 		addSecurityProvider();
-		Sql2o sql2o = new Sql2o("jdbc:mysql://155.69.160.33/cmo", "root", "root");
+		Sql2o sql2o = new Sql2o("jdbc:mysql://127.0.0.1:3306/cmo", "root", "root");
 		Model.setSql2o(sql2o);
 
 		
