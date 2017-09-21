@@ -1,4 +1,3 @@
-package org.openshift.quickstarts.undertow.servlet;
 import static spark.Spark.*;
 
 import java.io.IOException;
@@ -32,7 +31,9 @@ public class Main {
 		Sql2o sql2o = new Sql2o("jdbc:mysql://127.0.0.1:3306/cmo", "root", "root");
 		Model.setSql2o(sql2o);
 
-		
+		get("/hello", (req, res) -> {
+			return "hello";
+		});
 
 		get("/student", (req, res) -> {
 			res.status(200);
