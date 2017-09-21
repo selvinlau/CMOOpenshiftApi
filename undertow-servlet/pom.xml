@@ -39,7 +39,7 @@
 
     <dependencies>
 
- 
+
         
         <dependency>
 			<groupId>com.sparkjava</groupId>
@@ -115,7 +115,7 @@
                         <configuration>
                             <archive>
                                 <manifest>
-                                    <mainClass>org.openshift.quickstarts.undertow.servlet.ServletServer</mainClass>
+                                    <mainClass>org.openshift.quickstarts.undertow.servlet.Main</mainClass>
                                 </manifest>
                             </archive>
                         </configuration>
